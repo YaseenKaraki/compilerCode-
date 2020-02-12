@@ -1,1 +1,1 @@
-This code done by ocr, so it may contain erros
+This code done by OCR, so it may contain errors.
