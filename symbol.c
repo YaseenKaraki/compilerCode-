@@ -2,9 +2,9 @@
 
 #define STRMAX 999 /* size of lexemes array */
 #define SYMMAX 100 /* size of symtable */
-char lexemes (STRMAX);
+char lexemes [STRMAX];
 int lastchar = -1; /*last used position in lexemes */
-struct entry symtable(SYMMAX);
+struct entry symtable[SYMMAX];
 int lastentry = 0; /* last used position in symtable */
 
 int lookup(s)  /* returns position of entry for s */
