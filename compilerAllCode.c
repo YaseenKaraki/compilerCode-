@@ -189,6 +189,13 @@ int lookup(s)  /* returns position of entry for s */
             return p;
     return 0;
 }
+            
+            
+            
+            
+            
+            
+            
 int insert(s, tok) /* returns position of entry for s */
     char s[];
     int tok;

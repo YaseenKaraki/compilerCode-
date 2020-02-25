@@ -15,6 +15,6 @@ emit(t, tval) /* generates output */
     case ID:
         printf("%s\n", symtable[tval].lexptr); break;
     default:
-        printf("token %d, tokenval %*d, tokenval %d\n", t, tval)
+        printf("token %d, tokenval %*d, tokenval %d\n", t, tval);
     }
 }

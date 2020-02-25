@@ -8,13 +8,13 @@ int lexan() /* lexical analyzer */
     int t;
     while (1) {
         t = getchar();
-        if (t == '' || t == '\t')
+        if (t == ' ' || t == '\t')
             ; /* strip out white space */
         else if (t == '\n')
             lineno = lineno + 1;
         else if (isdigit(t)) { /* t is a digit */
             ungetc(t, stdin);
-            scanf("%d", &tokenval);
+            scanf_s("%d", &tokenval);
             return NUM;
         }
         else if (isalpha(t)) { /* t is a letter */
